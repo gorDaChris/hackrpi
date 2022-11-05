@@ -5,35 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
     <title>Spaceify</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
-<style>
-    body {
-        background-image: url("https://img.freepik.com/premium-vector/space-background-with-stars-vector-illustration_97886-319.jpg")
-    }
-</style>
+
 <body>
     <div class = "main-container"> 
+        <a href="https://www.nasa.gov/" class="nav">Resources</a>
         <div class = "sun-container">
             <img id="sun" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/25d45014-8cc3-4c98-b02c-5a0cf3a55ddd/dbwrfyf-3ad67c12-bf02-4231-bed9-fbb6f2b00ba5.png/v1/fill/w_900,h_900,strp/sun_on_a_transparent_background__by_prussiaart_dbwrfyf-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTAwIiwicGF0aCI6IlwvZlwvMjVkNDUwMTQtOGNjMy00Yzk4LWIwMmMtNWEwY2YzYTU1ZGRkXC9kYndyZnlmLTNhZDY3YzEyLWJmMDItNDIzMS1iZWQ5LWZiYjZmMmIwMGJhNS5wbmciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.iosIdwUZ5hFlqY7tTU35rkr2gKrVC5QbvtYgvjySbog" alt="">
-            <!-- <div class="centered">
-                CENTER
-            </div> -->
         </div> 
         <h1 class="heading">SPACEIFY</h1>
     
         <div class = "planets-container">
             <div class = "mercury-container">
-                <a href="mercury-info.html">
-                    <img id="mercury" src="https://assets.stickpng.com/images/580b585b2edbce24c47b2709.png" alt="">
+                <a href="mercury.html">
+                    <img class = "planet" id="mercury" src="https://assets.stickpng.com/images/580b585b2edbce24c47b2709.png" alt="mercury_img">
                 </a>
-                <!--<img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png" alt="">-->
-                <div class = "planet_label">
-                    Placeholder text
+                <div class = "planet-label" id="mer-label">
+                    Mercury
                 </div>
             </div>
-            
-        </div>    
+            <div class = "venus-container">
+                <a href="venus.html">
+                    <img class = "planet" id="venus" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Venus_globe_-_transparent_background.png/2048px-Venus_globe_-_transparent_background.png" alt="venus_img">
+                </a>
+                <div class = "planet-label" id="ven-label">
+                    Venus
+                </div>
+
+            </div>
+            <div class = "earth-container">
+                <a href="earth.html">
+                    <img class = "planet" id="earth" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png" alt="earth_img">
+                </a>
+                <div class = "planet-label" id="ear-label">
+                    Earth
+                </div>
+            </div>
+            <div class = "mars-container">
+                <a href="mars.html">
+                    <img class = "planet" id="mars" src="https://upload.wikimedia.org/wikipedia/commons/6/68/Mars_%2816716283421%29_-_Transparent_background.png" alt="mars_img">
+                </a>
+                <div class = "planet-label" id="mars-label">
+                    Mars
+                </div>
+            </div>
+            <div class = "jupiter-container">
+                <a href="jupiter.html">
+                    <img class = "planet" id="jupiter" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Jupiter_%28transparent%29.png" alt="jupiter_img">
+                </a>
+                <div class = "planet-label" id="jup-label">
+                    Jupiter
+                </div>
+            </div>
+            <div class = "saturn-container">
+                <a href="saturn.html">
+                    <img class = "planet" id="saturn" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Saturnx.png/1200px-Saturnx.png" alt="saturn_img">
+                </a>
+                <div class = "planet-label" id="sat-label">
+                    Saturn
+                </div>
+            </div>
+            <div class = "uranus-container">
+                <a href="uranus.html">
+                    <img class = "planet" id="uranus" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Uranus2-transparent.png" alt="uranus_img">
+                </a>
+                <div class = "planet-label" id="ura-label">
+                    Uranus
+                </div>
+            </div>
+            <div class = "neptune-container">
+                <a href="neptune.html">
+                    <img class = "planet" id="neptune" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Neptune_cutout.png/1200px-Neptune_cutout.png" alt="neptune_img">
+                </a>
+                <div class = "planet-label" id="nep-label">
+                    Neptune
+                </div>
+            </div>
+        </div>  
+        <p class="footer">Christopher Lo and Jun Song | HackRPI 2022</p>  
     </div>
     
     

@@ -1,3 +1,7 @@
+body {
+    background-image: url("https://img.freepik.com/premium-vector/space-background-with-stars-vector-illustration_97886-319.jpg")
+}
+
 /* Titles */ 
 .heading {
     color:aliceblue; 
@@ -8,19 +12,20 @@
     left:50%;
     transform:translate(-50%, -50%);
 }
+.nav {
+    color:aliceblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:20px;
+    padding-right:50px;
+    padding-top:25px;
+    text-align:right;
+}
 .sun-container {
     position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
 }
-
-/* .centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 #sun {
     margin-top: -30%;
@@ -32,20 +37,210 @@
     display: flex;
     flex-direction: column;
 }
+.planet-label {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:35px;
+    transition-duration:500ms;
+    opacity:0;
+}
+.planet-label:hover {
+    color:aliceblue;
+    opacity:1;
+}
+#mer-label {
+    padding-left:115px;
+    padding-top:30px;
+}
+#mer-label:hover {
+    transform:translateY(-60px);
+}
+#ven-label {
+    padding-right:280px;
+    padding-top:30px;
+    position:absolute;
+}
+#ven-label:hover {
+    transform:translateY(-60px);
+}
+#ear-label {
+    padding-top:40px;
+}
+#ear-label:hover {
+    transform:translateY(-60px);
+}
+#mars-label {
+    padding-top:30px;
+    padding-right:190px;
+    position:absolute;
+}
+#mars-label:hover {
+    transform:translateY(-70px);
+}
+#jup-label {
+    padding-left:600px;
+    position:absolute;
+}
+#jup-label:hover {
+    transform:translateY(-50px);
+}
+#sat-label {
+    padding-top:50px;
+    padding-right:300px;
+    position:absolute;
+}
+#sat-label:hover {
+    transform:translateY(-50px);
+}
+#ura-label {
+    padding-top:40px;
+    padding-left:450px;
+    position:absolute;
+}
+#ura-label:hover {
+    transform:translateY(-100px);
+}
+#nep-label {
+    padding-top:40px;
+    padding-right:210px;
+    position:absolute;
+}
+#nep-label:hover {
+    transform:translateY(-80px);
+}
 
 /* Planets */
 .planets-container {
     display: flex;
+    justify-items: center;
+    flex-direction: column;
+
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
+.mercury-container {
+    display:flex;
+    justify-content: flex-start;
+}
 #mercury {
-    width:350px;
-    padding-left:50px;
+    width:250px;
     transition-duration:500ms;
 }
 #mercury:hover {
-  width:360px;
+  width:260px;
 }
 
+.venus-container {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+#venus {
+    width:300px;
+    padding-left:200px;
+    transition-duration:500ms;
+}
+#venus:hover {
+    width:310px;
+}
 
+.earth-container {
+    display:flex;
+    justify-content: flex-start;
+    margin-right: 10%;
+}
+#earth {
+    width:350px;
+    padding-left:200px;
+    transition-duration:500ms;
+}
+#earth:hover {
+    width:360px;
+}
 
+.mars-container {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+#mars {
+    width:250px;
+    padding-left:200px;
+    transition-duration:500ms;
+}
+#mars:hover {
+    width:260px;
+}
+
+.jupiter-container {
+    display:flex;
+    justify-content: flex-start;
+    margin-right: 10%;
+}
+#jupiter {
+    width:700px;
+    padding-left:200px;
+    transition-duration:500ms;
+}
+#jupiter:hover {
+    width:710px;
+}
+
+.saturn-container {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+#saturn {
+    width:650px;
+    padding-left:200px;
+    transition-duration:500ms;
+}
+#saturn:hover {
+    width:660px;
+}
+
+.uranus-container {
+    display:flex;
+    justify-content: flex-start;
+    margin-right: 10%;
+}
+#uranus {
+    width:600px;
+    padding-left:200px;
+    transition-duration:500ms;
+}
+#uranus:hover {
+    width:610px;
+}
+
+.neptune-container {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+}
+#neptune {
+    width:550px;
+    padding-left:200px;
+    transition-duration:500ms;
+}
+#neptune:hover {
+    width: 560px;
+}
+
+.footer {
+    color:aliceblue;
+    font-family:'Courier New', Courier, monospace;
+    text-align:center;
+}
+
+::-webkit-scrollbar {
+    width:8px;
+}
+::-webkit-scrollbar-thumb {
+    background:aliceblue
+}
+::-webkit-scrollbar-track {
+    background:black
+}

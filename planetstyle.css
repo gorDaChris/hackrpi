@@ -1,0 +1,69 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row_container {
+    display: flex;
+    justify-content: center
+    /* justify-content: center; */
+}
+
+.left_text {
+    color: white;
+    font-size: 0.5cm;
+    position:absolute;
+    margin-top:80px;
+    margin-left:250px;
+}
+
+.right_text {
+    color: white;
+    font-size: 0.5cm;
+    position:absolute;
+    margin-top:-200px;
+    margin-left:1250px;
+}
+
+.planet {
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    width:250px;
+    
+}
+.planet-header {
+    text-align:center;
+    color:aliceblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:100px;
+}
+#venus {
+    margin-top:-30px;
+    width:500px;
+}
+#jupiter {
+    margin-top:-180px;
+    width:1000px;
+}
+#saturn {
+    margin-top:-180px;
+    width:900px;
+}
+#uranus {
+    margin-top:-125px;
+    width:700px;
+}
+#neptune {
+    margin-top:-125px;
+    width:500px;
+}
+::-webkit-scrollbar {
+    width:8px;
+}
+::-webkit-scrollbar-thumb {
+    background:aliceblue
+}
+::-webkit-scrollbar-track {
+    background:black
+}
