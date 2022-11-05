@@ -1,0 +1,51 @@
+/* Titles */ 
+.heading {
+    color:aliceblue; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:150px;
+    position:absolute;
+    top:5%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+.sun-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+#sun {
+    margin-top: -30%;
+    width: 50%;
+    height: 50%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Planets */
+.planets-container {
+    display: flex;
+}
+
+#mercury {
+    width:350px;
+    padding-left:50px;
+    transition-duration:500ms;
+}
+#mercury:hover {
+  width:360px;
+}
+
+
+
