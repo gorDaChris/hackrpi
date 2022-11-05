@@ -11,26 +11,28 @@
 
 .left_text {
     color: white;
-    font-size: 0.5cm;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
     position:absolute;
     margin-top:80px;
-    margin-left:250px;
+    margin-left:200px;
+    max-width: 10cm;
 }
 
 .right_text {
     color: white;
-    font-size: 0.5cm;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
     position:absolute;
-    margin-top:-200px;
-    margin-left:1250px;
+    margin-top:-250px;
+    margin-left:1200px;
 }
 
 .planet {
     display:flex;
     margin-left:auto;
     margin-right:auto;
-    width:250px;
-    
+    width:350px;
 }
 .planet-header {
     text-align:center;
@@ -39,24 +41,20 @@
     font-size:100px;
 }
 #venus {
-    margin-top:-30px;
-    width:500px;
+    width:450px;
 }
+
 #jupiter {
-    margin-top:-180px;
-    width:1000px;
+    width:400px;
 }
 #saturn {
-    margin-top:-180px;
-    width:900px;
+    width:600px;
 }
 #uranus {
-    margin-top:-125px;
-    width:700px;
+    width:450px;
 }
 #neptune {
-    margin-top:-125px;
-    width:500px;
+    width:600px;
 }
 ::-webkit-scrollbar {
     width:8px;

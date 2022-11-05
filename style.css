@@ -2,6 +2,10 @@ body {
     background-image: url("https://img.freepik.com/premium-vector/space-background-with-stars-vector-illustration_97886-319.jpg")
 }
 
+a {
+    color:gray;
+    text-decoration:None;
+}
 /* Titles */ 
 .heading {
     color:aliceblue; 
@@ -19,6 +23,19 @@ body {
     padding-right:50px;
     padding-top:25px;
     text-align:right;
+}
+.nav-content {
+    background-color: black;
+    display:none;
+    position:absolute;
+    text-align:center;
+    margin-left:1755px;
+    width: 100px;
+    z-index:1;
+    
+}
+.nav:hover .nav-content {
+    display:block;
 }
 .sun-container {
     position: relative;
